@@ -16,7 +16,7 @@ const Projects = () => {
                 "border-b border-b-white/10 px-6 pb-6 pt-[1.875rem] xl:border-b-transparent xl:px-[1.375rem] xl:pb-[1.375rem] xl:pt-[4.375rem]",
                 i === 0
                   ? "xl:border-r xl:border-r-white/10 min-[1462px]:pl-0"
-                  : "",
+                  : "min-[1462px]:pr-0",
               )}
             >
               <div className="mb-[0.6875rem] flex items-center gap-0.5 text-sm font-semibold xl:mb-5 xl:text-[1.0625rem]">
@@ -28,7 +28,11 @@ const Projects = () => {
               <h3 className="mb-[4.0625rem] text-[1.625rem] md:mb-[2.125rem] xl:mb-[3.125rem] xl:text-[1.875rem]">
                 {title}
               </h3>
-              <img className="aspect-[16/10] rounded-[10px]" src={img} alt="" />
+              <img
+                className="aspect-[16/10] rounded-[10px] object-cover"
+                src={img}
+                alt=""
+              />
             </li>
           ))}
         </ul>
