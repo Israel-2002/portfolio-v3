@@ -7,37 +7,43 @@ import arrowRight from "@/assets/svg/arrow-right.svg";
 const Projects = () => {
   return (
     <div className="bg-black text-white">
-      <ul className="grid xl:grid-cols-2">
-        {PROJECTS.slice(0, 2).map(({ category, img, title }, i) => (
-          <li
-            key={i}
-            className={cn(
-              "border-b border-b-white/10 px-6 pb-6 pt-[1.875rem] xl:px-[1.375rem] xl:pb-[1.375rem] xl:pt-[4.375rem]",
-              i === 0 ? "xl:border-r xl:border-r-white/10" : "",
-            )}
-          >
-            <div className="mb-[0.6875rem] flex items-center gap-0.5 text-sm font-semibold xl:mb-5 xl:text-[1.0625rem]">
-              <img className="w-1.5" src={bracketOpen} alt="" />
-              <span>{category}</span>
-              <img className="w-1.5" src={bracketClose} alt="" />
-            </div>
+      <div className="xl:border-b xl:border-b-white/10">
+        <ul className="mx-auto grid max-w-[1440px] xl:grid-cols-2">
+          {PROJECTS.slice(0, 2).map(({ category, img, title }, i) => (
+            <li
+              key={i}
+              className={cn(
+                "border-b border-b-white/10 px-6 pb-6 pt-[1.875rem] xl:border-b-transparent xl:px-[1.375rem] xl:pb-[1.375rem] xl:pt-[4.375rem]",
+                i === 0
+                  ? "xl:border-r xl:border-r-white/10 min-[1462px]:pl-0"
+                  : "",
+              )}
+            >
+              <div className="mb-[0.6875rem] flex items-center gap-0.5 text-sm font-semibold xl:mb-5 xl:text-[1.0625rem]">
+                <img className="w-1.5" src={bracketOpen} alt="" />
+                <span>{category}</span>
+                <img className="w-1.5" src={bracketClose} alt="" />
+              </div>
 
-            <h3 className="mb-[4.0625rem] text-[1.625rem] md:mb-[2.125rem] xl:mb-[3.125rem] xl:text-[1.875rem]">
-              {title}
-            </h3>
-            <img className="aspect-[16/10] rounded-[10px]" src={img} alt="" />
-          </li>
-        ))}
-      </ul>
+              <h3 className="mb-[4.0625rem] text-[1.625rem] md:mb-[2.125rem] xl:mb-[3.125rem] xl:text-[1.875rem]">
+                {title}
+              </h3>
+              <img className="aspect-[16/10] rounded-[10px]" src={img} alt="" />
+            </li>
+          ))}
+        </ul>
+      </div>
 
-      <div className="grid xl:grid-cols-3">
+      <div className="mx-auto grid max-w-[1440px] xl:grid-cols-3">
         <ul className="grid xl:col-span-2 xl:grid-cols-2">
           {PROJECTS.slice(2, 4).map(({ category, img, title }, i) => (
             <li
               key={i}
               className={cn(
                 "flex flex-col border-b border-b-white/10 px-6 pb-6 pt-[1.875rem] xl:px-[1.375rem] xl:pb-[1.375rem] xl:pt-[4.375rem]",
-                i === 0 ? "xl:border-r xl:border-r-white/10" : "",
+                i === 0
+                  ? "xl:border-r xl:border-r-white/10 min-[1462px]:pl-0"
+                  : "",
               )}
             >
               <div className="mb-[0.6875rem] flex items-center gap-0.5 text-sm font-semibold xl:mb-5 xl:pl-[2.5rem] xl:text-[1.0625rem]">
