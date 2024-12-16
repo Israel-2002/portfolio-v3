@@ -1,8 +1,15 @@
+// import Hero from "@/pages/home/Hero";
+
+import FeaturedProjects from "@/pages/home/featured-projects/FeaturedProjects";
 
 const Home = () => {
   return (
-    <div>Home</div>
-  )
-}
+    <>
+      {/* <Hero /> */}
+      <div className="h-screen"></div>
+      <FeaturedProjects />
+    </>
+  );
+};
 
-export default Home
+export default Home;
