@@ -11,3 +11,17 @@ h2 {
   font-weight: 400;
   line-height: 1.2;
 }
+
+.marquee {
+  animation: marquee 120s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(calc(-50% - 2.1875rem));
+  }
+}
