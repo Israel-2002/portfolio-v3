@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <>
       {/* <Hero /> */}
-      <div className="h-screen"></div>
+      <div className="h-screen bg-primary"></div>
       <FeaturedProjects />
     </>
   );
