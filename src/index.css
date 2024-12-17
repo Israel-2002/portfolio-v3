@@ -13,7 +13,7 @@ h2 {
 }
 
 .marquee {
-  animation: marquee 120s linear infinite;
+  animation: marquee 250s linear infinite;
 }
 
 @keyframes marquee {
