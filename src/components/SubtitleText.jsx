@@ -1,10 +1,17 @@
+import { cn } from "@/lib/cn";
 import PropTypes from "prop-types";
 
-const SubtitleText = ({ number, text }) => {
+const SubtitleText = ({ number, text, noShadow }) => {
   return (
     <div className="mb-3.5 flex items-center gap-1">
-      <div className="bg-primary shadow-primary/50 h-4 w-4 rounded-full shadow-lg"></div>
-      <span className="text-grey text-[0.8125rem] font-semibold tracking-tight lg:text-sm xl:text-lg">
+      <div
+        className={cn(
+          "h-4 w-4 rounded-full bg-primary",
+          !noShadow ? "shadow-lg shadow-primary/50" : "",
+        )}
+      ></div>
+
+      <span className="text-[0.8125rem] font-semibold tracking-tight text-grey lg:text-sm xl:text-lg">
         {`{${number}}`} — {text}
       </span>
     </div>
@@ -12,8 +19,9 @@ const SubtitleText = ({ number, text }) => {
 };
 
 SubtitleText.propTypes = {
-  number: PropTypes.number,
+  number: PropTypes.string,
   text: PropTypes.string,
+  noShadow: PropTypes.bool,
 };
 
 export default SubtitleText;
