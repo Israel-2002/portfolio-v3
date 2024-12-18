@@ -2,8 +2,6 @@ import { PROJECTS_MARQUEE } from "@/constants/MARQUEE";
 import asterisk from "@/assets/svg/asterisk.svg";
 
 const marquee = Array(24).fill(PROJECTS_MARQUEE).flat()
-console.log(marquee);
-
 
 const Marquee = () => {
   return (
