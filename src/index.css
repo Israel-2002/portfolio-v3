@@ -12,8 +12,17 @@ h2 {
   line-height: 1.2;
 }
 
+h3 {
+  font-size: clamp(1.5rem, 1rem + 2.5vw, 3rem);
+  line-height: 1.4;
+}
+
+.mask {
+  mask: linear-gradient(90deg, transparent, white 10%, white 80%, transparent);
+}
+
 .marquee {
-  animation: marquee 250s linear infinite;
+  animation: marquee 550s linear infinite;
 }
 
 @keyframes marquee {
