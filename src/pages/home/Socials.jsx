@@ -38,7 +38,7 @@ const Socials = () => {
                       {name}
 
                       <div className="ml-auto grid h-[52px] w-[52px] place-items-center rounded-full bg-primary">
-                        <Icon className="transition-transform duration-500 group-hover:rotate-180" />
+                        <Icon className="transition-transform duration-[350ms] group-hover:rotate-180" />
                       </div>
                     </a>
                   ) : (
