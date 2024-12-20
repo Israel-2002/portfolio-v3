@@ -1,18 +1,18 @@
 export const PROJECTS_MARQUEE = [
   {
-    number: "8+",
-    text: "years of experience",
+    number: "Multiple",
+    text: "successful projects delivered",
   },
   {
-    number: ">95%",
-    text: "client retention rate",
+    number: "100%",
+    text: "client satisfaction",
   },
   {
-    number: "18",
-    text: "satisfied clients",
+    number: "Focused on",
+    text: "delivering quality solutions",
   },
   {
-    number: "14",
-    text: "projects finished",
+    number: "Consistent",
+    text: "growth and improvement",
   },
 ];
