@@ -32,7 +32,7 @@ const Testimonials = () => {
         </div>
       </Container>
 
-      <div className="overflow-hidden mask">
+      <div className="mask overflow-hidden">
         <ul className="marquee flex w-max gap-[1.875rem]">
           {testimonials.map(({ name, image, testimonial }, i) => (
             <li
@@ -54,7 +54,9 @@ const Testimonials = () => {
                   src={image}
                   alt=""
                 />
-                <h4 className="mb-2 text-[0.9375rem] font-bold">{name}</h4>
+                <h4 className="xl:text-[1.0625rem] mb-2 text-[0.9375rem] font-bold">
+                  {name}
+                </h4>
               </div>
             </li>
           ))}
