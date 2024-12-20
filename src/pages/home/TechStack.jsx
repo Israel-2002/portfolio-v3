@@ -19,7 +19,7 @@ const TechStack = () => {
             {TECHSTACK.map(({ icon, name, description }, i) => (
               <li
                 key={i}
-                className="sticky top-5 flex w-full max-w-[520px] gap-[1.5rem] rounded-[14px] bg-white px-6 py-10 font-semibold shadow-md shadow-black/5 min-[400px]:p-10 xl:top-20 xl:mx-0 xl:max-w-[920px]"
+                className="sticky top-5 flex w-full max-w-[520px] gap-[1.5rem] rounded-[14px] bg-white px-6 py-10 font-semibold shadow-md shadow-primary/5 min-[400px]:p-10 xl:top-20 xl:mx-0 xl:max-w-[920px]"
               >
                 <img
                   src={icon}
