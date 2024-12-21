@@ -3,8 +3,11 @@ import Container from "@/components/Container";
 import SubtitleText from "@/components/SubtitleText";
 import arrowRight from "@/assets/svg/arrow-right.svg";
 import ace from "@/assets/svg/ace.svg";
+import { useNavigate } from "react-router-dom";
 
 const Header = () => {
+  const navigate = useNavigate()
+
   return (
     <div className="relative overflow-hidden border-b border-b-white/10 bg-black pb-[3.125rem] pt-[3.75rem] text-white xl:pb-[8.125rem] xl:pt-[10rem]">
       <Container>
@@ -17,6 +20,7 @@ const Header = () => {
 
         <Button
           icon={arrowRight}
+          onClick={() => navigate('/contact')}
           label="Let's work together"
           className="w-[250px] text-left md:w-[280px]"
         />

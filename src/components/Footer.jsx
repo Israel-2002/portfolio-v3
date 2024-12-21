@@ -6,9 +6,12 @@ import abstract from "@/assets/svg/abstract-2.svg";
 import Button from "@/components/Button";
 import Profile from "@/components/Profile";
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Footer = () => {
   const [time, setTime] = useState("");
+  const navigate = useNavigate()
+
 
   useEffect(() => {
     const updateTime = () => {
@@ -90,6 +93,7 @@ const Footer = () => {
 
             <Button
               icon={arrowRight}
+              onClick={() => navigate('/contact')}
               label="Contact me"
               className="w-[183px] text-left"
             />
