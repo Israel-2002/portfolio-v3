@@ -10,8 +10,11 @@ import { useNavigate } from "react-router-dom";
 
 const Footer = () => {
   const [time, setTime] = useState("");
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
+  const backToTopHandler = () => {
+    window.scrollTo(0, 0);
+  };
 
   useEffect(() => {
     const updateTime = () => {
@@ -44,7 +47,10 @@ const Footer = () => {
               <p>Available for freelance</p>
             </div>
 
-            <button className="hidden items-center gap-3.5 text-[1.0625rem] text-grey md:flex">
+            <button
+              onClick={backToTopHandler}
+              className="hidden items-center gap-3.5 text-[1.0625rem] text-grey md:flex"
+            >
               Back to top
               <img className="-rotate-45" src={arrowRight} alt="" />
             </button>
@@ -93,7 +99,7 @@ const Footer = () => {
 
             <Button
               icon={arrowRight}
-              onClick={() => navigate('/contact')}
+              onClick={() => navigate("/contact")}
               label="Contact me"
               className="w-[183px] text-left"
             />
@@ -102,7 +108,7 @@ const Footer = () => {
       </div>
 
       <Container>
-        <div className="py-10 text-grey flex flex-col gap-5 md:text-lg md:flex-row justify-between">
+        <div className="flex flex-col justify-between gap-5 py-10 text-grey md:flex-row md:text-lg">
           <span>© 2025</span>
 
           <div className="flex items-center gap-4">
