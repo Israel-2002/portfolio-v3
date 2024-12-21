@@ -33,7 +33,7 @@ const Testimonials = () => {
       </Container>
 
       <div className="mask overflow-hidden">
-        <ul className="marquee flex w-max gap-[1.875rem]">
+        <ul className="testimonial-marquee flex w-max gap-[1.875rem]">
           {testimonials.map(({ name, image, testimonial }, i) => (
             <li
               key={i}
