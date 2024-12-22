@@ -1,5 +1,4 @@
-// import Hero from "@/pages/home/Hero";
-
+import Hero from "@/pages/home/Hero";
 import Collaboration from "@/pages/home/Collaboration";
 import FeaturedProjects from "@/pages/home/featured-projects/FeaturedProjects";
 import Socials from "@/pages/home/Socials";
@@ -9,8 +8,8 @@ import Testimonials from "@/pages/home/Testimonials";
 const Home = () => {
   return (
     <>
-      {/* <Hero /> */}
-      <div className="h-screen bg-primary"></div>
+      <Hero />
+      {/* <div className="h-screen bg-matte-white"></div> */}
       <FeaturedProjects />
       <TechStack />
       <Collaboration />
