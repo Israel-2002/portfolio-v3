@@ -39,7 +39,7 @@ const Navbar = () => {
             style={{
               left: isOpen ? 0 : "-100%",
             }}
-            className="transition-al absolute top-0 grid h-dvh w-[90%] max-w-[500px] place-items-center bg-white duration-300 md:static md:left-auto md:top-auto md:flex md:h-auto md:w-fit md:max-w-none md:items-center md:justify-between md:bg-transparent"
+            className="fixed top-0 grid h-dvh w-[90%] max-w-[500px] place-items-center bg-white transition-all duration-300 md:static md:left-auto md:top-auto md:flex md:h-auto md:w-fit md:max-w-none md:items-center md:justify-between md:bg-transparent"
           >
             <div
               className="absolute right-6 top-[26px] grid py-4 md:hidden"
