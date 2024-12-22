@@ -13,7 +13,7 @@ const Marquee = ({ marqueeArr }) => {
             className="flex flex-shrink-0 items-center gap-8 lg:gap-[4.375rem]"
           >
             <div>
-              <span className="text-primary">{number} /</span> {text}
+              <span className="text-primary">{number}</span> {text}
             </div>
 
             <img
