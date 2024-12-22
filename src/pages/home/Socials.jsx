@@ -35,15 +35,17 @@ const Socials = () => {
                 >
                   {!lastItem ? (
                     <a className={className} href={url} target="_blank">
-                      {name}
+                      <span className="transition-transform duration-500 group-hover:translate-x-5">
+                        {name}
+                      </span>
 
-                      <div className="ml-auto grid h-[52px] w-[52px] place-items-center rounded-full bg-primary">
-                        <Icon className="transition-transform duration-[350ms] group-hover:rotate-180" />
+                      <div className="ml-auto grid h-[52px] w-[52px] place-items-center rounded-full bg-primary text-white transition-transform duration-500 group-hover:-translate-x-5 group-hover:-translate-y-5">
+                        <Icon />
                       </div>
                     </a>
                   ) : (
                     <Link className={className} to={url}>
-                      <span className="transition-transform duration-500 group-hover:translate-x-5">
+                      <span className="text-white transition-transform duration-500 group-hover:translate-x-5">
                         {name}
                       </span>
 
