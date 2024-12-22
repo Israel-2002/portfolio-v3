@@ -7,7 +7,7 @@ import {
 
 const Profile = () => {
   return (
-    <div className="flex gap-5 text-left xl:gap-[1.625rem]">
+    <div className="flex gap-5 min-[375px]:gap-8 text-left xl:gap-[1.625rem]">
       <div className="flex items-center">
         <img className="scale-95 md:scale-100" src={cresents} alt="" />
         <div className="-ml-0.5 h-[70px] w-[70px] rounded-full bg-primary md:-ml-0 xl:h-[90px] xl:w-[90px]"></div>
