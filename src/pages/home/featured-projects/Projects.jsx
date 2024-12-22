@@ -70,7 +70,7 @@ const Projects = () => {
         </ul>
 
         <div className="w-full px-6 lg:px-8 xl:px-0">
-          <Link to="/projects" className="group my-[1.375rem] flex w-full cursor-pointer items-center justify-center gap-5 rounded-[10px] bg-primary py-[3.75rem] text-matte-black transition-all duration-300 hover:scale-100 hover:rounded-none xl:my-0 xl:h-full xl:scale-[0.92] xl:py-0 xl:text-xl min-[1440px]:scale-100 min-[1440px]:scale-y-[0.92]">
+          <Link to="/projects" className="group my-[1.375rem] flex w-full cursor-pointer items-center justify-center gap-5 rounded-[10px] bg-primary py-[3.75rem] text-white transition-all duration-300 hover:scale-100 hover:rounded-none xl:my-0 xl:h-full xl:scale-[0.92] xl:py-0 xl:text-xl min-[1440px]:scale-100 min-[1440px]:scale-y-[0.92]">
             <p className="transition-transform duration-300 group-hover:translate-x-2">
               View all projects
             </p>

@@ -6,7 +6,7 @@ const Button = ({ label, onClick, className, icon }) => {
     <button
       onClick={onClick}
       className={cn(
-        "rounded-full bg-primary py-5 font-medium text-matte-black md:text-lg",
+        "rounded-full bg-primary py-5 font-medium text-white md:text-lg",
         icon
           ? "group relative pl-7 shadow-2xl shadow-primary/20 transition-shadow duration-300 hover:shadow-none"
           : "px-7",
