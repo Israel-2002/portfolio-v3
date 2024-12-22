@@ -1,27 +1,35 @@
+import Button from "@/components/Button";
 import Container from "@/components/Container";
+import arrowRight from "@/assets/svg/arrow-right.svg";
+import heroBg from "@/assets/images/home/hero-bg.png";
 
 const Hero = () => {
   return (
-    <header className="relative pt-60">
-      {/* <div className="bg-primary absolute top-0 hidden h-[85px] w-[85px] md:left-[109px] md:h-[109px] md:w-[109px] lg:block"></div>
-
-      <div className="bg-primary absolute top-[109px] hidden h-[85px] w-[85px] md:left-0 md:h-[109px] md:w-[109px] lg:block"></div>
-
-      <div className="bg-primary/60 absolute top-[218px] hidden h-[85px] w-[85px] md:left-[109px] md:h-[109px] md:w-[109px] lg:block"></div> */}
-
+    <header
+      style={{
+        backgroundImage: `url(${heroBg})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+      className="relative md:max-h-[700px] bg-matte-white pb-14 pt-48 text-matte-black lg:h-screen"
+    >
       <Container>
-        <div className="grid grid-cols-3">
-          <div></div>
+        <h1 className="font-medium text-white">
+          Delivering Thoughtfully <br /> Built Web{" "}
+          <span className="text-primary">Experiences</span>.
+        </h1>
 
-          <div className="col-span-2">
-            <h1>
-              <span>Hi!</span> <span>I&apos;m</span>{" "}
-              <span>Dornor Teye Israel</span>
-              <span>Frontend Developer</span> from <span>Ghana</span>
-              turning your ideas into pixel-perfect realities.
-            </h1>
-          </div>
-        </div>
+        <p className="mb-10 mt-5 max-w-[470px] text-lg min-[800px]:max-w-[700px] xl:text-xl">
+          I build fast, responsive websites that prioritize seamless user
+          experiences and modern design, ensuring every detail aligns with your
+          goals.
+        </p>
+
+        <Button
+          icon={arrowRight}
+          label="See what I can do"
+          className="w-[250px] text-left"
+        />
       </Container>
     </header>
   );
