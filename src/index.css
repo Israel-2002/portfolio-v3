@@ -12,7 +12,13 @@ body {
 
 h1 {
   font-size: clamp(2.875rem, 1.9167rem + 4.7917vw, 5.75rem);
-  line-height: 1.125;
+  line-height: 1.2;
+}
+
+@media (min-width: 800px) {
+  h1 {
+    line-height: 1.125;
+  }
 }
 
 h2 {
