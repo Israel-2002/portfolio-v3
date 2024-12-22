@@ -9,7 +9,6 @@ const Home = () => {
   return (
     <>
       <Hero />
-      {/* <div className="h-screen bg-matte-white"></div> */}
       <FeaturedProjects />
       <TechStack />
       <Collaboration />
