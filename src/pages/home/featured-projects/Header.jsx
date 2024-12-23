@@ -22,7 +22,7 @@ const Header = () => {
           icon={arrowRight}
           onClick={() => navigate('/contact')}
           label="Let's work together"
-          className="w-[250px] text-left md:w-[280px]"
+          className="w-[235px] text-left md:w-[260px]"
         />
 
         <img
