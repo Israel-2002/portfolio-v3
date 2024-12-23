@@ -4,6 +4,7 @@ import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import arrowDiagonal from "@/assets/svg/arrow-45deg.svg";
 import arrowDiagonalBlack from "@/assets/svg/arrow-45deg-black.svg";
+import { NAVLINKS } from "@/constants/NAVBAR";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -50,27 +51,24 @@ const Navbar = () => {
             </div>
 
             <ul className="flex flex-col items-center gap-10 text-center text-lg text-matte-black md:flex-row md:gap-12 md:text-base md:text-white">
-              <li>
-                <NavLink to="/">Home</NavLink>
-              </li>
-
-              <li>
-                <NavLink to="/projects">Projects</NavLink>
-              </li>
-
-              <li>
-                <NavLink>About</NavLink>
-              </li>
-
-              <li>
-                <NavLink>Contact</NavLink>
-              </li>
+              {NAVLINKS.map(({ link, url }, i) => (
+                <li key={i}>
+                  <NavLink
+                    to={url}
+                    className={({ isActive }) =>
+                      cn("link", isActive ? "font-semibold" : "font-normal")
+                    }
+                  >
+                    {link}
+                  </NavLink>
+                </li>
+              ))}
 
               <li>
                 <a
                   href="https://israeldornor.vercel.app/"
                   target="_blank"
-                  className="flex items-center"
+                  className="link flex items-center"
                 >
                   Version 2
                   <img
