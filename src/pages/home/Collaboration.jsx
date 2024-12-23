@@ -12,7 +12,10 @@ const Collaboration = () => {
             Thanks for stopping by, I&apos;m seeking to join a dynamic team of
             talented professionals in design and development. If you believe
             we&apos;d make a great team, feel free to send me an{" "}
-            <a className="text-primary" href="mailto:israelrankin@gmail.com">
+            <a
+              className="link text-primary after:bg-primary"
+              href="mailto:israelrankin@gmail.com"
+            >
               email 📧
             </a>
             .
