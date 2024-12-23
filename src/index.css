@@ -11,7 +11,7 @@ body {
 }
 
 h1 {
-  font-size: clamp(2.875rem, 1.9167rem + 4.7917vw, 5.75rem);
+  font-size: clamp(2.875rem, 2.0536rem + 4.1071vw, 5.75rem);
   line-height: 1.2;
 }
 
@@ -30,6 +30,28 @@ h2 {
 h3 {
   font-size: clamp(1.5rem, 1rem + 2.5vw, 3rem);
   line-height: 1.4;
+}
+
+.link {
+  position: relative;
+}
+
+.link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  background-color: white;
+  transition: transform 300ms linear;
+  transform-origin: right;
+}
+
+.link:hover.link::after {
+  transform: scaleX(1);
+  transform-origin: left;
 }
 
 .mask {
@@ -51,5 +73,27 @@ h3 {
 
   100% {
     transform: translateX(calc(-50% - 2.1875rem));
+  }
+}
+
+.rotating-curved-text {
+  -webkit-animation: spin 10s linear infinite;
+  -moz-animation: spin 10s linear infinite;
+  animation: spin 10s linear infinite;
+}
+@-moz-keyframes spin {
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
