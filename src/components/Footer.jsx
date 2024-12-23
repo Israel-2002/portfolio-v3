@@ -85,7 +85,7 @@ const Footer = () => {
               </span>
               <a
                 href="mailto:israelrankin@gmail.com"
-                className="mb-[1.625rem] block break-words text-[1.875rem] font-semibold leading-snug lg:mb-[2.6875rem] lg:text-4xl xl:mb-9 xl:text-[2.5rem]"
+                className="link mb-[1.625rem] block break-words text-[1.875rem] font-semibold leading-snug lg:mb-[2.6875rem] lg:text-4xl xl:mb-9 xl:text-[2.5rem]"
               >
                 israelrankin<span className="text-primary">@</span>gmail.com
               </a>
@@ -100,7 +100,7 @@ const Footer = () => {
                 icon={arrowRight}
                 onClick={() => navigate("/contact")}
                 label="Contact me"
-                className="w-[183px] text-left"
+                className="w-[183px] md:w-[190px] text-left"
               />
             </div>
           </div>
