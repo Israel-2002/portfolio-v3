@@ -11,7 +11,7 @@ body {
 }
 
 h1 {
-  font-size: clamp(2.875rem, 2.0536rem + 4.1071vw, 5.75rem);
+  font-size: clamp(3rem, 2.2143rem + 3.9286vw, 5.75rem);
   line-height: 1.2;
 }
 
@@ -25,6 +25,13 @@ h2 {
   font-size: clamp(2.5rem, 1.4167rem + 5.4167vw, 5.75rem);
   font-weight: 400;
   line-height: 1.125;
+}
+
+h2.page-title {
+  font-size: clamp(3rem, 2.3214rem + 3.3929vw, 5.375rem);
+  font-weight: 400;
+  line-height: 1.125;
+  color: #333333;
 }
 
 h3 {
