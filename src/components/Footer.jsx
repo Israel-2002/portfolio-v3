@@ -41,7 +41,7 @@ const Footer = () => {
 
       <Container>
         <div className="flex items-center justify-between py-6 lg:py-8">
-          <div className="text-[1.0625rem]m flex items-center gap-2">
+          <div className="flex items-center gap-2 text-sm md:text-[0.9375rem]">
             <div className="h-2.5 w-2.5 rounded-full bg-primary"></div>{" "}
             <p>Available for freelance</p>
           </div>
@@ -100,7 +100,7 @@ const Footer = () => {
                 icon={arrowRight}
                 onClick={() => navigate("/contact")}
                 label="Contact me"
-                className="w-[183px] md:w-[190px] text-left"
+                className="w-[183px] text-left md:w-[190px]"
               />
             </div>
           </div>
