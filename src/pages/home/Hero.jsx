@@ -16,8 +16,8 @@ const Hero = () => {
     >
       <Container>
         <div className="relative">
-          <h1 className="font-medium text-white">
-            Delivering Thoughtfully <br /> Built Web{" "}
+          <h1 className="font-medium text-white max-w-[680px] md:max-w-none">
+            Delivering Thoughtfully <br className="hidden md:block"/> Built Web{" "}
             <span className="text-primary">Experiences</span>.
           </h1>
 
