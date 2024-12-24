@@ -1,6 +1,7 @@
 import Layout from "@/pages/Layout";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "@/pages/home/Home";
+import Projects from "@/pages/projects/Projects";
 
 function App() {
   const router = createBrowserRouter([
@@ -12,6 +13,10 @@ function App() {
           index: true,
           element: <Home />,
         },
+        {
+          path: "projects",
+          element: <Projects />,
+        }
       ],
     },
   ]);
