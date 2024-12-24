@@ -18,7 +18,7 @@ const Projects = () => {
           {PROJECTS.map(({ title, category, description, img }, i) => (
             <li key={i}>
               <img
-                className="mb-8 rounded-[14px] lg:mb-[3.125rem] xl:mb-[4.375rem]"
+                className="mb-8 rounded-[14px] lg:rounded-[20px] lg:mb-[3.125rem] xl:mb-[4.375rem]"
                 src={img}
                 alt=""
               />
