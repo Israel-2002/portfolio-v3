@@ -8,7 +8,7 @@ import {
 
 const Contact = () => {
   return (
-    <div className="bg-[#F8F8F8] pb-[3.25rem] pt-32 md:pt-[11.25rem] lg:pb-[5.625rem] xl:pb-[10rem] xl:pt-[14.375rem]">
+    <div className="short-page bg-[#F8F8F8] pb-[3.25rem] pt-32 md:pt-[11.25rem] lg:pb-[5.625rem] xl:pb-[10rem] xl:pt-[14.375rem]">
       <Container>
         <div className="flex flex-col justify-between gap-12 lg:flex-row lg:gap-16">
           <div className="flex-shrink-0 text-center lg:text-left">
