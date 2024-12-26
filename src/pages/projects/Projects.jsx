@@ -1,5 +1,7 @@
 import Container from "@/components/Container";
 import { PROJECTS } from "@/constants/PROJECTS";
+import BracketOpen from "@/assets/svg/bracket-open.svg?react";
+import BracketClose from "@/assets/svg/bracket-close.svg?react";
 
 const Projects = () => {
   return (
@@ -18,13 +20,15 @@ const Projects = () => {
           {PROJECTS.map(({ title, category, description, img }, i) => (
             <li key={i}>
               <img
-                className="mb-8 rounded-[14px] lg:rounded-[20px] lg:mb-[3.125rem] xl:mb-[4.375rem]"
+                className="mb-8 rounded-[14px] lg:mb-[3.125rem] lg:rounded-[20px] xl:mb-[4.375rem]"
                 src={img}
                 alt=""
               />
 
-              <span className="mb-[1.125rem] inline-block text-sm font-semibold lg:text-[1.0625rem]">
+              <span className="mb-[1.125rem] flex items-center gap-0.5 text-sm font-semibold lg:text-[1.0625rem]">
+                <BracketOpen />
                 {category}
+                <BracketClose />
               </span>
 
               <h3 className="mb-5 text-[2rem] leading-tight lg:mb-6 lg:text-[2.875rem] xl:mb-[1.75rem] xl:text-[3.75rem]">
