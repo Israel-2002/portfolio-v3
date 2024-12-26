@@ -73,6 +73,18 @@ h3 {
   animation: marquee 550s linear infinite;
 }
 
+@media (min-height: 2000px) {
+  .short-page {
+    height: calc(100vh - 1121px)
+  }
+
+  .footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+}
+
 @keyframes marquee {
   0% {
     transform: translateX(0);
