@@ -6,11 +6,14 @@ import abstract from "@/assets/svg/abstract-2.svg";
 import Button from "@/components/Button";
 import Profile from "@/components/Profile";
 import { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
+import { cn } from "@/lib/cn";
 
 const Footer = () => {
   const [time, setTime] = useState("");
+
   const navigate = useNavigate();
+  const { pathname } = useLocation();
 
   const backToTopHandler = () => {
     window.scrollTo(0, 0);
@@ -36,7 +39,12 @@ const Footer = () => {
   }, []);
 
   return (
-    <footer className="bg-black text-white">
+    <footer
+      className={cn(
+        "bg-black text-white",
+        pathname === "contact" ? "footer" : "",
+      )}
+    >
       <Marquee marqueeArr={PROJECTS_MARQUEE} />
 
       <Container>
