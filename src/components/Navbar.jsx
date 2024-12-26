@@ -68,17 +68,23 @@ const Navbar = () => {
               <span className="h-[1px] w-7 -rotate-45 bg-matte-black"></span>
             </div>
 
-            <ul className={cn(
-              "flex flex-col items-center gap-10 text-center text-lg text-matte-black md:flex-row md:gap-12 md:text-base",
-              pathname === "/" ? "md:text-white" : "md:text-[#333333]",
-            )}>
+            <ul
+              className={cn(
+                "flex flex-col items-center gap-10 text-center text-lg text-matte-black md:flex-row md:gap-12 md:text-base",
+                pathname === "/" ? "md:text-white" : "md:text-matte-black",
+              )}
+            >
               {NAVLINKS.map(({ link, url }, i) => (
                 <li key={i}>
                   <NavLink
                     to={url}
                     onClick={() => setIsOpen(false)}
                     className={({ isActive }) =>
-                      cn("link", isActive ? "font-semibold" : "font-normal")
+                      cn(
+                        "link",
+                        isActive ? "font-semibold" : "font-normal",
+                        pathname !== "/" ? "after:bg-matte-black" : "",
+                      )
                     }
                   >
                     {link}
@@ -90,7 +96,10 @@ const Navbar = () => {
                 <a
                   href="https://israeldornor.vercel.app/"
                   target="_blank"
-                  className="link flex items-center"
+                  className={cn(
+                    "link flex items-center",
+                    pathname !== "/" ? "after:bg-matte-black" : "",
+                  )}
                   onClick={() => setIsOpen(false)}
                 >
                   Version 2
@@ -102,7 +111,6 @@ const Navbar = () => {
                     src={arrowDiagonal}
                     alt=""
                   />
-                  
                   <img
                     className={cn(
                       "w-[30px] md:hidden",
