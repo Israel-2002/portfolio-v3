@@ -10,6 +10,11 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const { pathname } = useLocation();
 
+  const logoUrl =
+    process.env.NODE_ENV === "development"
+      ? "http://localhost:5173"
+      : "https://izzy-portfoliooo.netlify.app/";
+
   return (
     <nav
       className={cn(
@@ -19,7 +24,7 @@ const Navbar = () => {
       <Container>
         <div className="items-center justify-between md:flex">
           <div className="flex w-full items-center justify-between md:w-fit">
-            <a href="http://localhost:5173">
+            <a href={logoUrl}>
               <Logo
                 className={cn(
                   "h-10 w-4",
