@@ -13,7 +13,7 @@ const About = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="bg-[#F8F8F8] pb-[3.75rem] pt-32 lg:pb-[5.625rem] lg:pt-[11.125rem] xl:pb-[10rem] xl:pt-[12.375rem]">
+    <div className="short-page bg-[#F8F8F8] pb-[3.75rem] pt-32 lg:pb-[5.625rem] lg:pt-[11.125rem] xl:pb-[10rem] xl:pt-[12.375rem]">
       <Container>
         <div className="mb-[2.375rem] grid gap-3 md:mb-[3.75rem] lg:gap-4 xl:mb-20">
           <div className="flex w-fit items-center gap-2 text-sm font-semibold text-[#2F2F2F80] md:text-[0.9375rem]">
@@ -26,12 +26,14 @@ const About = () => {
 
         <div className="grid items-start gap-10 font-semibold text-[#2f2f2f] lg:gap-[2.875rem] xl:grid-cols-2">
           <div className="flex flex-col gap-5 lg:flex-row lg:gap-6">
-            <img className="h-[75px] w-[75px] rounded-full" src={img} alt="" />
+            <div className="h-[75px] w-[75px] flex-shrink-0 overflow-hidden rounded-full">
+              <img className="h-full w-full object-contain" src={img} alt="" />
+            </div>
 
             <div className="grid gap-6 lg:gap-[1.125rem]">
               <a
                 href="mailto:israelrankin@gmail.com"
-                className="link w-fit text-2xl lg:order-2 lg:text-[1.875rem] after:bg-[#2f2f2f]"
+                className="link w-fit text-2xl after:bg-[#2f2f2f] lg:order-2 lg:text-[1.875rem]"
               >
                 israelrankin@gmail.com
               </a>
