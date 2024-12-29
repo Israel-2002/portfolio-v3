@@ -5,6 +5,7 @@ import { NavLink, useLocation } from "react-router-dom";
 import arrowDiagonal from "@/assets/svg/arrow-45deg.svg";
 import arrowDiagonalBlack from "@/assets/svg/arrow-45deg-black.svg";
 import { NAVLINKS } from "@/constants/NAVBAR";
+import logo from "@/assets/images/logo.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,14 +20,18 @@ const Navbar = () => {
       <Container>
         <div className="items-center justify-between md:flex">
           <div className="flex w-full items-center justify-between md:w-fit">
-            <span
-              className={cn(
-                "cursor-pointer text-xl",
-                pathname === "/" ? "text-white" : "text-primary",
-              )}
-            >
-              izzy®
-            </span>
+            <a href="http://localhost:5173">
+              <img
+                src={logo}
+                alt=""
+                className={cn(
+                  "w-4",
+                  pathname === "/"
+                    ? "invert filter"
+                    : "opacity-80 brightness-75 filter",
+                )}
+              />
+            </a>
 
             <div
               className="grid gap-2 md:hidden"
