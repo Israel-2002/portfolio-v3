@@ -2,8 +2,7 @@ import Container from "@/components/Container";
 import { cn } from "@/lib/cn";
 import { useState } from "react";
 import { NavLink, useLocation } from "react-router-dom";
-import arrowDiagonal from "@/assets/svg/arrow-45deg.svg";
-import arrowDiagonalBlack from "@/assets/svg/arrow-45deg-black.svg";
+import ArrowDiagonal from "@/assets/svg/arrow-45deg.svg?react";
 import { NAVLINKS } from "@/constants/NAVBAR";
 import Logo from "@/assets/svg/logo.svg?react";
 
@@ -21,12 +20,13 @@ const Navbar = () => {
         <div className="items-center justify-between md:flex">
           <div className="flex w-full items-center justify-between md:w-fit">
             <a href="http://localhost:5173">
-              <Logo className={cn(
-                "w-4 h-10",
-                pathname === "/" ? "text-white" : "text-primary",
-              )}/>
+              <Logo
+                className={cn(
+                  "h-10 w-4",
+                  pathname === "/" ? "text-white" : "text-primary",
+                )}
+              />
             </a>
-
 
             <div
               className="grid gap-2 md:hidden"
@@ -61,7 +61,7 @@ const Navbar = () => {
             className="fixed top-0 grid h-dvh w-[90%] max-w-[500px] place-items-center bg-white transition-all duration-300 md:static md:left-auto md:top-auto md:flex md:h-auto md:w-fit md:max-w-none md:items-center md:justify-between md:bg-transparent"
           >
             <div
-              className="absolute right-6 top-[26px] grid py-4 md:hidden"
+              className="absolute right-6 top-[32px] grid py-4 md:hidden"
               onClick={() => setIsOpen(false)}
             >
               <span className="h-[1px] w-7 rotate-45 bg-matte-black"></span>
@@ -97,28 +97,14 @@ const Navbar = () => {
                   href="https://israeldornor.vercel.app/"
                   target="_blank"
                   className={cn(
-                    "link flex items-center",
+                    "link relative inline-block w-[140px] text-left md:w-[100px]",
                     pathname !== "/" ? "after:bg-matte-black" : "",
                   )}
                   onClick={() => setIsOpen(false)}
                 >
                   Version 2
-                  <img
-                    className={cn(
-                      "hidden w-[30px] md:block",
-                      pathname !== "/" ? "md:hidden" : "",
-                    )}
-                    src={arrowDiagonal}
-                    alt=""
-                  />
-                  <img
-                    className={cn(
-                      "w-[30px] md:hidden",
-                      pathname !== "/" ? "md:block" : "",
-                    )}
-                    src={arrowDiagonalBlack}
-                    alt=""
-                  />
+
+                  <ArrowDiagonal className="absolute right-0 top-1/2 -translate-y-1/2" />
                 </a>
               </li>
             </ul>
