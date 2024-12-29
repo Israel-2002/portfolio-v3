@@ -70,7 +70,7 @@ const About = () => {
             </div>
           </div>
 
-          <div className="grid gap-5 text-lg font-semibold leading-tight lg:gap-[1.75rem] lg:text-[1.3125rem] lg:leading-snug">
+          <div className="grid gap-5 text-lg font-semibold lg:gap-[1.75rem] lg:text-[1.3125rem] leading-snug">
             <p>
               Hi, I&apos;m Israel, a passionate web developer with a focus on
               creating visually stunning and highly functional digital
