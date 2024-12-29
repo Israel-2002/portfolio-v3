@@ -43,7 +43,7 @@ const Hero = () => {
               ry={60}
               startOffset={0}
               reversed={true}
-              svgProps={{ className: "rotating-curved-text" }}
+              svgProps={{ className: "rotating-curved-text", fill: "#ffffff" }}
               text="FRONTEND DEVELOPER • FRONTEND DEVELOPER • "
             />
           </div>
