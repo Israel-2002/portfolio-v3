@@ -42,7 +42,7 @@ const Footer = () => {
     <footer
       className={cn(
         "bg-black text-white",
-        pathname === "contact" ? "footer" : "",
+        pathname === "contact" || pathname === "about" ? "footer" : "",
       )}
     >
       <Marquee marqueeArr={PROJECTS_MARQUEE} />
