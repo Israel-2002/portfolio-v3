@@ -19,11 +19,13 @@ const Projects = () => {
         <ul className="mx-auto grid max-w-[1100px] gap-[4.375rem] text-[#2F2F2F] lg:gap-[5.625rem] xl:gap-[8.75rem]">
           {PROJECTS.map(({ title, category, description, img }, i) => (
             <li key={i}>
-              <img
-                className="mb-8 rounded-[14px] lg:mb-[3.125rem] lg:rounded-[20px] xl:mb-[4.375rem]"
-                src={img}
-                alt=""
-              />
+              <div className="h-[clamp(181px,calc(181px+(733-181)*((100vw-320px)/(1100-320))),733px)] overflow-hidden mb-8 rounded-[14px] lg:mb-[3.125rem] lg:rounded-[20px] xl:mb-[4.375rem]">
+                <img
+                  className="w-full h-full object-cover"
+                  src={img}
+                  alt=""
+                />
+              </div>
 
               <span className="mb-[1.125rem] flex items-center gap-0.5 text-sm font-semibold lg:text-[1.0625rem]">
                 <BracketOpen />
