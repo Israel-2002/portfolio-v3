@@ -97,7 +97,7 @@ const Navbar = () => {
                   href="https://israeldornor.vercel.app/"
                   target="_blank"
                   className={cn(
-                    "link relative inline-block w-[140px] text-left md:w-[100px]",
+                    "link relative inline-block w-[110px] text-left md:w-[100px]",
                     pathname !== "/" ? "after:bg-matte-black" : "",
                   )}
                   onClick={() => setIsOpen(false)}
