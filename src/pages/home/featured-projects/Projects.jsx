@@ -21,19 +21,18 @@ const Projects = () => {
               )}
             >
               <div className="mb-[0.6875rem] flex items-center gap-0.5 text-sm font-semibold xl:mb-5 xl:text-[1.0625rem]">
-                <BracketOpen className="text-primary"/>
+                <BracketOpen className="text-primary" />
                 {category}
-                <BracketClose className="text-primary"/>
+                <BracketClose className="text-primary" />
               </div>
 
               <h3 className="mb-[4.0625rem] text-[1.625rem] md:mb-[2.125rem] xl:mb-[3.125rem] xl:text-[1.875rem]">
                 {title}
               </h3>
-              <img
-                className="aspect-[16/10] rounded-[10px] object-cover"
-                src={img}
-                alt=""
-              />
+
+              <div className="aspect-[16/10] overflow-hidden rounded-[10px]">
+                <img className="h-full w-full object-cover" src={img} alt="" />
+              </div>
             </li>
           ))}
         </ul>
@@ -52,9 +51,9 @@ const Projects = () => {
               )}
             >
               <div className="mb-[0.6875rem] flex items-center gap-0.5 text-sm font-semibold xl:mb-5 xl:text-[1.0625rem]">
-                <BracketOpen className="text-primary"/>
+                <BracketOpen className="text-primary" />
                 {category}
-                <BracketClose className="text-primary"/>
+                <BracketClose className="text-primary" />
               </div>
 
               <h3 className="mb-[4.0625rem] text-[1.625rem] md:mb-[2.125rem] xl:mb-[3.125rem] xl:text-[1.875rem]">
