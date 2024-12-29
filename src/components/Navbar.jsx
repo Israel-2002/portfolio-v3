@@ -5,7 +5,7 @@ import { NavLink, useLocation } from "react-router-dom";
 import arrowDiagonal from "@/assets/svg/arrow-45deg.svg";
 import arrowDiagonalBlack from "@/assets/svg/arrow-45deg-black.svg";
 import { NAVLINKS } from "@/constants/NAVBAR";
-import logo from "@/assets/images/logo.png";
+import Logo from "@/assets/svg/logo.svg?react";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,17 +21,12 @@ const Navbar = () => {
         <div className="items-center justify-between md:flex">
           <div className="flex w-full items-center justify-between md:w-fit">
             <a href="http://localhost:5173">
-              <img
-                src={logo}
-                alt=""
-                className={cn(
-                  "w-4",
-                  pathname === "/"
-                    ? "invert filter"
-                    : "opacity-80 brightness-75 filter",
-                )}
-              />
+              <Logo className={cn(
+                "w-4 h-10",
+                pathname === "/" ? "text-white" : "text-primary",
+              )}/>
             </a>
+
 
             <div
               className="grid gap-2 md:hidden"
