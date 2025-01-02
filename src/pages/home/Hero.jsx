@@ -16,8 +16,8 @@ const Hero = () => {
     >
       <Container>
         <div className="relative">
-          <h1 className="font-medium text-white max-w-[680px] md:max-w-none">
-            Delivering Thoughtfully <br className="hidden md:block"/> Built Web{" "}
+          <h1 className="max-w-[680px] font-medium text-white md:max-w-none">
+            Delivering Thoughtfully <br className="hidden md:block" /> Built Web{" "}
             <span className="text-primary">Experiences</span>.
           </h1>
 
@@ -27,13 +27,15 @@ const Hero = () => {
             your goals.
           </p>
 
-          <Button
-            icon={arrowRight}
-            label="See what I can do"
-            className="w-[250px] text-left"
-          />
+          <a href="#work">
+            <Button
+              icon={arrowRight}
+              label="See what I can do"
+              className="w-[250px] text-left"
+            />
+          </a>
 
-          <div className="absolute top-[30%] xl:top-[35%] right-[2%] hidden scale-[0.6] md:block lg:right-[8%] lg:scale-[0.7] xl:right-[15%]">
+          <div className="absolute right-[2%] top-[30%] hidden scale-[0.6] md:block lg:right-[8%] lg:scale-[0.7] xl:right-[15%] xl:top-[35%]">
             <ReactCurvedText
               width={300}
               height={300}
