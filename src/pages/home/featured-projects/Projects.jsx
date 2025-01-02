@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 const Projects = () => {
   return (
-    <div className="bg-black text-white">
+    <div id="work" className="bg-black text-white">
       <div className="xl:border-b xl:border-b-white/10">
         <ul className="mx-auto grid max-w-[1440px] xl:grid-cols-2">
           {PROJECTS.slice(0, 2).map(({ category, img, title }, i) => (
