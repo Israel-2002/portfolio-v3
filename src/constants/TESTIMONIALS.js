@@ -1,4 +1,4 @@
-import avatar from '@/assets/images/home/avatars/avatar.png'
+import avatar from '@/assets/images/home/avatars/constant.jpeg'
 import avatar2 from '@/assets/images/home/avatars/avatar-2.png'
 import avatar3 from '@/assets/images/home/avatars/avatar-3.png'
 import avatar4 from '@/assets/images/home/avatars/avatar-4.png'
@@ -11,10 +11,10 @@ import avatar10 from '@/assets/images/home/avatars/avatar-10.png'
 
 export const TESTIMONIALS = [
   {
-    name: "Koen Chegg",
+    name: " Constant Emil M",
     image: avatar,
-    position: "Project Manager",
-    testimonial: "Your attention to detail and ability to bring designs to life with clean, responsive code has been a game changer for our project."
+    position: "Creative Design Director & Product Lead @ Akademeia 365",
+    testimonial: "Working with Israel has been a great success. He excels at turning design ideas into responsive, user-friendly interfaces with his tech skills. His attention to detail, problem-solving, and clear communication make him a valuable asset to the team. We're excited for more successful projects together."
   },
   {
     name: "Kim Armstrong",
