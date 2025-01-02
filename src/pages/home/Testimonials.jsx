@@ -34,17 +34,17 @@ const Testimonials = () => {
 
       <div className="mask overflow-hidden">
         <ul className="testimonial-marquee flex w-max gap-[1.875rem]">
-          {testimonials.map(({ name, image, testimonial }, i) => (
+          {testimonials.map(({ name, image, position, testimonial }, i) => (
             <li
               key={i}
-              className="flex w-fit max-w-[320px] flex-shrink-0 flex-col rounded-[14px] border border-white/10 p-6 xl:max-w-[423px] xl:p-[3rem]"
+              className="flex w-fit max-w-[320px] max-h-[600px] flex-shrink-0 flex-col rounded-[14px] border border-white/10 p-6 xl:max-w-[423px] xl:p-[3rem]"
             >
               <img
                 className="mb-10 ml-auto w-9 xl:w-[50px]"
                 src={quote}
                 alt=""
               />
-              <p className="mb-[4.5rem] text-lg font-semibold leading-snug xl:text-[1.375rem]">
+              <p className="mb-[4.5rem] text-lg font-semibold leading-snug xl:text-xl">
                 {testimonial}
               </p>
 
@@ -54,9 +54,14 @@ const Testimonials = () => {
                   src={image}
                   alt=""
                 />
-                <h4 className="xl:text-[1.0625rem] mb-2 text-[0.9375rem] font-bold">
-                  {name}
-                </h4>
+                <div>
+                  <h4 className="xl:text-[1.0625rem] mb-0.5 text-[0.9375rem] font-bold">
+                    {name}
+                  </h4>
+                  <h5 className="text-[0.9375rem]">
+                    {position}
+                  </h5>
+                </div>
               </div>
             </li>
           ))}
