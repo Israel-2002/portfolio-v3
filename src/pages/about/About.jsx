@@ -24,7 +24,7 @@ const About = () => {
           <h2 className="page-title">About me</h2>
         </div>
 
-        <div className="grid items-start gap-10 font-semibold text-[#2f2f2f] lg:gap-[2.875rem] xl:grid-cols-2">
+        <div className="grid items-start gap-10 font-semibold text-[#2f2f2f] lg:gap-[2.875rem] min-[1180px]:grid-cols-2">
           <div className="flex flex-col gap-5 lg:flex-row lg:gap-6">
             <div className="h-[75px] w-[75px] flex-shrink-0 overflow-hidden rounded-full">
               <img className="h-full w-full object-contain" src={img} alt="" />

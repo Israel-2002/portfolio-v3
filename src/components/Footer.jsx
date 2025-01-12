@@ -65,40 +65,40 @@ const Footer = () => {
       </Container>
 
       <div className="border-b border-t border-b-white/10 border-t-white/10">
-        <div className="relative mx-auto flex max-w-[1440px] flex-col gap-[2.375rem] py-[3.125rem] text-center lg:gap-[3.125rem] lg:py-20 xl:flex-row xl:justify-between xl:px-[3.75rem] xl:py-[10rem] xl:text-left 2xl:px-0">
+        <div className="relative mx-auto flex max-w-[1440px] flex-col gap-[2.375rem] py-[3.125rem] text-center lg:gap-[3.125rem] lg:py-20 min-[1180px]:flex-row min-[1180px]:justify-between min-[1180px]:px-[3.75rem] min-[1180px]:py-[10rem] min-[1180px]:text-left 2xl:px-0">
           <img
-            className="absolute left-0 top-0 hidden h-full xl:block"
+            className="absolute left-0 top-0 hidden h-full min-[1180px]:block"
             src={abstract}
             alt=""
           />
 
-          <div className="relative z-10 flex flex-col gap-[1.375rem] border-b border-b-white/10 px-6 pb-[2.375rem] lg:gap-10 lg:px-8 xl:gap-[2.6875rem] xl:border-b-transparent xl:px-0 xl:pb-0">
+          <div className="relative z-10 flex flex-col gap-[1.375rem] border-b border-b-white/10 px-6 pb-[2.375rem] lg:gap-10 lg:px-8 min-[1180px]:gap-[2.6875rem] min-[1180px]:border-b-transparent min-[1180px]:px-0 min-[1180px]:pb-0">
             <h2>
               Let&apos;s create something extraordinary together
               <span className="text-primary">.</span>
             </h2>
-            <p className="text-lg font-semibold text-grey lg:text-xl xl:text-[1.375rem]">
+            <p className="text-lg font-semibold text-grey lg:text-xl min-[1180px]:text-[1.375rem]">
               Let&apos;s make an impact
             </p>
           </div>
 
           <div className="relative z-10">
-            <div className="mx-auto w-fit xl:mx-0">
+            <div className="mx-auto w-fit min-[1180px]:mx-0">
               <Profile />
             </div>
 
-            <div className="px-6 lg:px-8 xl:px-0">
-              <span className="mb-2.5 mt-[2.75rem] block text-sm font-semibold text-grey lg:mb-3.5 lg:text-[0.9375rem] xl:mt-[4.375rem]">
+            <div className="px-6 lg:px-8 min-[1180px]:px-0">
+              <span className="mb-2.5 mt-[2.75rem] block text-sm font-semibold text-grey lg:mb-3.5 lg:text-[0.9375rem] min-[1180px]:mt-[4.375rem]">
                 Contact me
               </span>
               <a
                 href="mailto:israelrankin@gmail.com"
-                className="link mb-[1.625rem] block break-words text-[1.875rem] font-semibold leading-snug lg:mb-[2.6875rem] lg:text-4xl xl:mb-9 xl:text-[2.5rem]"
+                className="link mb-[1.625rem] break-words text-[1.875rem] font-semibold leading-snug lg:mb-[2.6875rem] lg:text-4xl min-[1180px]:mb-9 min-[1180px]:text-[2.5rem] inline-block"
               >
                 israelrankin<span className="text-primary">@</span>gmail.com
               </a>
 
-              <p className="mx-auto mb-[2.75rem] max-w-[590px] text-lg font-semibold leading-snug text-grey lg:mb-[3.125rem] lg:text-xl xl:mb-[4.375rem]">
+              <p className="mx-auto mb-[2.75rem] max-w-[590px] text-lg font-semibold leading-snug text-grey lg:mb-[3.125rem] lg:text-xl min-[1180px]:mb-[4.375rem]">
                 Hit me up if you&apos;re looking for a{" "}
                 <span className="text-white">solid frontend developer</span> who
                 can bring your vision to life.
