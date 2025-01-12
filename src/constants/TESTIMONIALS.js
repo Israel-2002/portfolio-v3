@@ -1,5 +1,5 @@
 import avatar from '@/assets/images/home/avatars/constant.jpeg'
-import avatar2 from '@/assets/images/home/avatars/avatar-2.png'
+import avatar2 from '@/assets/images/home/avatars/kwame-sarpong.jpg'
 import avatar3 from '@/assets/images/home/avatars/avatar-3.png'
 import avatar4 from '@/assets/images/home/avatars/avatar-4.png'
 import avatar5 from '@/assets/images/home/avatars/avatar-5.png'
@@ -13,14 +13,14 @@ export const TESTIMONIALS = [
   {
     name: " Constant Emil M",
     image: avatar,
-    position: "Creative Design Director & Product Lead @ Akademeia 365",
+    position: "Product Lead @ Akademeia 365",
     testimonial: "Working with Israel has been a great success. He excels at turning design ideas into responsive, user-friendly interfaces with his tech skills. His attention to detail, problem-solving, and clear communication make him a valuable asset to the team. We're excited for more successful projects together."
   },
   {
-    name: "Kim Armstrong",
+    name: "K Sarpong",
     image: avatar2,
-    position: "UX/UI Designer",
-    testimonial: "Working with you was a pleasure. You took complex design mockups and translated them into pixel-perfect frontends, all while ensuring optimal performance and responsiveness across all devices. Truly impressive work."
+    position: "CEO @ Logiciele Labs",
+    testimonial: "Extremely talented and reliable frontend engineer. Demonstrated exceptional skills and remarkable discipline throughout all projects he did for Logiciele Labs, and his attention to details is top notch."
   },
   {
     name: "Adam Mccall",
