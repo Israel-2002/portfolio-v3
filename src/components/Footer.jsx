@@ -93,7 +93,7 @@ const Footer = () => {
               </span>
               <a
                 href="mailto:israelrankin@gmail.com"
-                className="link mb-[1.625rem] break-all text-[1.875rem] font-semibold leading-snug lg:mb-[2.6875rem] lg:text-4xl min-[1180px]:mb-9 min-[1180px]:text-[2.5rem] inline-block "
+                className="link mb-[1.625rem] inline-block break-all text-[1.875rem] font-semibold leading-snug md:break-normal lg:mb-[2.6875rem] lg:text-4xl min-[1180px]:mb-9 min-[1180px]:text-[2.5rem]"
               >
                 israelrankin<span className="text-primary">@</span>gmail.com
               </a>
