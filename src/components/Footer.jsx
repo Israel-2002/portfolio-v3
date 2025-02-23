@@ -100,7 +100,9 @@ const Footer = () => {
 
               <p className="split mx-auto mb-[2.75rem] max-w-[590px] text-lg font-semibold leading-snug text-grey lg:mb-[3.125rem] lg:text-xl min-[1180px]:mb-[4.375rem]">
                 Hit me up if you&apos;re looking for a{" "}
-                <p className="split text-white">solid frontend developer</p>
+                <span className="split text-white">
+                  solid frontend developer
+                </span>
                 <span className="split">
                   who can bring your vision to life.
                 </span>
@@ -124,9 +126,7 @@ const Footer = () => {
           <div className="flex items-center gap-4">
             <p className="split">ACCRA, GHANA</p>
 
-            <p className="inline-block w-[72px] text-white/80">
-              {time}
-            </p>
+            <p className="inline-block w-[72px] text-white/80">{time}</p>
           </div>
         </div>
       </Container>

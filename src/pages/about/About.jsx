@@ -18,10 +18,10 @@ const About = () => {
         <div className="mb-[2.375rem] grid gap-3 md:mb-[3.75rem] lg:gap-4 xl:mb-20">
           <div className="flex w-fit items-center gap-2 text-sm font-semibold text-[#2F2F2F80] md:text-[0.9375rem]">
             <div className="h-2.5 w-2.5 rounded-full bg-primary"></div>{" "}
-            <p>Available for freelance</p>
+            <p className="split">Available for freelance</p>
           </div>
 
-          <h2 className="page-title">About me</h2>
+          <h2 className="split page-title">About me</h2>
         </div>
 
         <div className="grid items-start gap-10 font-semibold text-[#2f2f2f] lg:gap-[2.875rem] min-[1180px]:grid-cols-2">
@@ -33,12 +33,12 @@ const About = () => {
             <div className="grid gap-6 lg:gap-[1.125rem]">
               <a
                 href="mailto:israelrankin@gmail.com"
-                className="link w-fit text-2xl after:bg-[#2f2f2f] lg:order-2 lg:text-[1.875rem]"
+                className="split link w-fit text-2xl after:bg-[#2f2f2f] lg:order-2 lg:text-[1.875rem]"
               >
                 israelrankin@gmail.com
               </a>
 
-              <p className="leading-snug text-[#2f2f2f99] lg:order-3 lg:max-w-[700px] lg:text-lg lg:leading-tight">
+              <p className="split leading-snug text-[#2f2f2f99] lg:order-3 lg:max-w-[700px] lg:text-lg lg:leading-tight">
                 I create clean, user-friendly websites designed to enhance your
                 digital experience, ensuring both functionality and aesthetics
                 work seamlessly to meet your needs.
@@ -71,7 +71,7 @@ const About = () => {
           </div>
 
           <div className="grid gap-5 text-lg font-semibold lg:gap-[1.75rem] lg:text-[1.3125rem] leading-snug">
-            <p>
+            <p className="split">
               Hi, I&apos;m Israel, a passionate web developer with a focus on
               creating visually stunning and highly functional digital
               experiences. With a strong background in front-end development, I
@@ -80,14 +80,14 @@ const About = () => {
               ensuring an optimal user experience every time.
             </p>
 
-            <p className="text-[#2f2f2f99]">
+            <p className="split text-[#2f2f2f99]">
               Over the years, I&apos;ve had the privilege of working with a
               diverse range of clients, from startups to well-established
               brands, helping them bring their unique visions to life online
               through innovative and tailored web solutions.
             </p>
 
-            <p>
+            <p className="split">
               Let&apos;s create something amazing together! I&apos;m eager to
               help bring your vision to life with a website that looks great,
               works flawlessly, and stands out in the digital world.

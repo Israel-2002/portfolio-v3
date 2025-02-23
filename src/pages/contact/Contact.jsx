@@ -12,10 +12,10 @@ const Contact = () => {
       <Container>
         <div className="flex flex-col justify-between gap-12 lg:flex-row lg:gap-16">
           <div className="flex-shrink-0 text-center lg:text-left">
-            <h2 className="page-title mb-6">
+            <h2 className="split page-title mb-6">
               Let&apos;s work <br /> together
             </h2>
-            <p className="mx-auto mb-4 max-w-[370px] text-sm font-semibold text-[#2F2F2F80] md:text-[0.9375rem]">
+            <p className="split mx-auto mb-4 max-w-[370px] text-sm font-semibold text-[#2F2F2F80] md:text-[0.9375rem]">
               Got a question or just want to say hello? Feel free to reach out –
               I&apos;ll be here to respond!
             </p>
