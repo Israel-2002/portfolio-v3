@@ -68,7 +68,7 @@ const Projects = () => {
           ))}
         </ul>
 
-        <div className="w-full ">
+        <div className="w-full px-6 lg:px-0">
           <Link
             to="/projects"
             className="group my-[1.375rem] flex w-full cursor-pointer items-center justify-center gap-5 rounded-[10px] bg-primary py-[3.75rem] text-white transition-all duration-300 hover:scale-100 hover:rounded-none lg:my-0 lg:h-full lg:scale-[0.92] lg:py-0 lg:text-lg min-[1440px]:scale-100 min-[1440px]:scale-y-[0.92]"
