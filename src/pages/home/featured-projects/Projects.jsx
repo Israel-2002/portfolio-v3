@@ -4,8 +4,24 @@ import BracketOpen from "@/assets/svg/bracket-open.svg?react";
 import BracketClose from "@/assets/svg/bracket-close.svg?react";
 import arrowRight from "@/assets/svg/arrow-right.svg";
 import { Link } from "react-router-dom";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { useRef } from "react";
+import { paralax } from "@/pages/animation/paralax";
+
+gsap.registerPlugin(useGSAP);
 
 const Projects = () => {
+  const imageContainerRefs = useRef([]);
+
+  useGSAP(() => {
+    imageContainerRefs.current.forEach((container) => {
+      const img = container?.querySelector("img");
+
+      paralax(img, container);
+    });
+  });
+
   return (
     <div id="work" className="bg-black text-white">
       <div className="lg:border-b lg:border-b-white/10">
@@ -30,8 +46,13 @@ const Projects = () => {
                 {title}
               </h3>
 
-              <div className="aspect-[16/10] overflow-hidden rounded-[10px]">
-                <img className="h-full w-full object-cover" src={img} alt="" />
+              <div
+                ref={(el) => imageContainerRefs.current.push(el)}
+                className="paralax-image-container aspect-[16/10] rounded-[10px]"
+              >
+                <div>
+                  <img className="object-cover" src={img} alt="" />
+                </div>
               </div>
             </li>
           ))}
@@ -59,11 +80,15 @@ const Projects = () => {
               <h3 className="mb-[4.0625rem] text-[1.625rem] md:mb-[2.125rem] lg:mb-[3.125rem] lg:text-[1.875rem]">
                 {title}
               </h3>
-              <img
-                className="mt-auto aspect-[16/10] rounded-[10px] object-cover"
-                src={img}
-                alt=""
-              />
+
+              <div
+                ref={(el) => imageContainerRefs.current.push(el)}
+                className="paralax-image-container mt-auto aspect-[16/10] rounded-[10px]"
+              >
+                <div>
+                  <img className="object-cover" src={img} alt="" />
+                </div>
+              </div>
             </li>
           ))}
         </ul>
