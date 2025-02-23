@@ -73,9 +73,28 @@ h3 {
   animation: marquee 550s linear infinite;
 }
 
+.paralax-image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.paralax-image-container div {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 135%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.paralax-image-container div img {
+  width: 100%;
+  height: 100%;
+}
+
 @media (min-height: 2000px) {
   .short-page {
-    height: calc(100vh - 1121px)
+    height: calc(100vh - 1121px);
   }
 
   .footer {
