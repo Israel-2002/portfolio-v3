@@ -32,8 +32,6 @@ const Layout = () => {
   useGSAP(
     () => {
       text(".split");
-      ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
-      text(".split");
     },
     { dependencies: [pathname] },
   );
