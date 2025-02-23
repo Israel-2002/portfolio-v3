@@ -5,10 +5,13 @@ import Navbar from "@/components/Navbar";
 import { useEffect, useRef } from "react";
 import { Outlet, useLocation } from "react-router-dom";
 import "lenis/dist/lenis.css";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 const Layout = () => {
   const lenisRef = useRef();
   const { pathname } = useLocation();
+
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -16,7 +19,7 @@ const Layout = () => {
 
   useEffect(() => {
     function update(time) {
-      lenisRef.current?.lenis?.raf(time * 900);
+      lenisRef.current?.lenis?.raf(time * 1000);
     }
 
     gsap.ticker.add(update);
