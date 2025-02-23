@@ -29,9 +29,14 @@ const Layout = () => {
     return () => gsap.ticker.remove(update);
   }, []);
 
-  useGSAP(() => {
-    text(".split");
-  });
+  useGSAP(
+    () => {
+      text(".split");
+      ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
+      text(".split");
+    },
+    { dependencies: [pathname] },
+  );
 
   return (
     <ReactLenis root options={{ autoRaf: false }} ref={lenisRef}>
