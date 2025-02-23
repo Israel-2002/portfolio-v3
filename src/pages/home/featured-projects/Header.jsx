@@ -13,7 +13,7 @@ const Header = () => {
       <Container>
         <SubtitleText number="01" text="Featured projects" />
 
-        <h2 className="mb-9 xl:mb-[4.25rem]">
+        <h2 className="split mb-9 xl:mb-[4.25rem]">
           I craft websites with <br className="hidden md:block" /> attention to
           detail.
         </h2>

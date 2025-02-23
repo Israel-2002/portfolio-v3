@@ -6,12 +6,14 @@ import { useEffect, useRef } from "react";
 import { Outlet, useLocation } from "react-router-dom";
 import "lenis/dist/lenis.css";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-gsap.registerPlugin(ScrollTrigger);
+import { useGSAP } from "@gsap/react";
+import { text } from "@/pages/animation/text";
+
+gsap.registerPlugin(ScrollTrigger, useGSAP);
 
 const Layout = () => {
   const lenisRef = useRef();
   const { pathname } = useLocation();
-
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -26,6 +28,10 @@ const Layout = () => {
 
     return () => gsap.ticker.remove(update);
   }, []);
+
+  useGSAP(() => {
+    text(".split");
+  });
 
   return (
     <ReactLenis root options={{ autoRaf: false }} ref={lenisRef}>

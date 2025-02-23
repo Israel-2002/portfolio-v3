@@ -36,13 +36,13 @@ const Projects = () => {
                   : "min-[1462px]:pr-0",
               )}
             >
-              <div className="mb-[0.6875rem] flex items-center gap-0.5 text-sm font-semibold lg:mb-5 lg:text-[1.0625rem]">
+              <div className="split mb-[0.6875rem] flex items-center gap-0.5 text-sm font-semibold lg:mb-5 lg:text-[1.0625rem]">
                 <BracketOpen className="text-primary" />
                 {category}
                 <BracketClose className="text-primary" />
               </div>
 
-              <h3 className="mb-[4.0625rem] text-[1.625rem] md:mb-[2.125rem] lg:mb-[3.125rem] lg:text-[1.875rem]">
+              <h3 className="split mb-[4.0625rem] text-[1.625rem] md:mb-[2.125rem] lg:mb-[3.125rem] lg:text-[1.875rem]">
                 {title}
               </h3>
 
@@ -71,13 +71,13 @@ const Projects = () => {
                   : "",
               )}
             >
-              <div className="mb-[0.6875rem] flex items-center gap-0.5 text-sm font-semibold lg:mb-5 lg:text-[1.0625rem]">
+              <div className="split mb-[0.6875rem] flex items-center gap-0.5 text-sm font-semibold lg:mb-5 lg:text-[1.0625rem]">
                 <BracketOpen className="text-primary" />
                 {category}
                 <BracketClose className="text-primary" />
               </div>
 
-              <h3 className="mb-[4.0625rem] text-[1.625rem] md:mb-[2.125rem] lg:mb-[3.125rem] lg:text-[1.875rem]">
+              <h3 className="split mb-[4.0625rem] text-[1.625rem] md:mb-[2.125rem] lg:mb-[3.125rem] lg:text-[1.875rem]">
                 {title}
               </h3>
 

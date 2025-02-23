@@ -8,7 +8,7 @@ const Collaboration = () => {
       <Marquee marqueeArr={PROJECTS_MARQUEE} />
       <div className="bg-black pb-[3.125rem] pt-[3.75rem] text-white/90 xl:pb-[8.125rem] xl:pt-[10rem]">
         <Container>
-          <h3 className="max-w-[1100px] leading-snug">
+          <h3 className="split max-w-[1100px] leading-snug">
             Thanks for stopping by, I&apos;m seeking to join a dynamic team of
             talented professionals in design and development. If you believe
             we&apos;d make a great team, feel free to send me an{" "}

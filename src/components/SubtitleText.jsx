@@ -11,7 +11,7 @@ const SubtitleText = ({ number, text, noShadow }) => {
         )}
       ></div>
 
-      <span className="text-[0.8125rem] font-semibold tracking-tight text-grey lg:text-sm xl:text-lg">
+      <span className="split text-[0.8125rem] font-semibold tracking-tight text-grey lg:text-sm xl:text-lg">
         {`{${number}}`} — {text}
       </span>
     </div>

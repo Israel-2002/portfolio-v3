@@ -13,7 +13,7 @@ const Socials = () => {
       <Container>
         <div className="relative z-10">
           <SubtitleText noShadow number="04" text="Contact me" />
-          <h2 className="mb-[2.1875rem] text-[#2F2F2F] lg:mb-10 xl:mb-20">
+          <h2 className="split mb-[2.1875rem] text-[#2F2F2F] lg:mb-10 xl:mb-20">
             I&apos;m all over <br className="lg:hidden" /> the internet
           </h2>
 
@@ -35,7 +35,7 @@ const Socials = () => {
                 >
                   {!lastItem ? (
                     <a className={className} href={url} target="_blank">
-                      <span className="transition-transform duration-500 group-hover:translate-x-5">
+                      <span className="split transition-transform duration-500 group-hover:translate-x-5">
                         {name}
                       </span>
 
@@ -45,7 +45,7 @@ const Socials = () => {
                     </a>
                   ) : (
                     <Link className={className} to={url}>
-                      <span className="text-white transition-transform duration-500 group-hover:translate-x-5">
+                      <span className="split text-white transition-transform duration-500 group-hover:translate-x-5">
                         {name}
                       </span>
 

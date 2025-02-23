@@ -14,10 +14,10 @@ const Profile = () => {
       </div>
 
       <div>
-        <h3 className="mb-0.5 text-lg font-semibold xl:text-[1.375rem]">
+        <h3 className="split mb-0.5 text-lg font-semibold xl:text-[1.375rem]">
           Dornor Teye Israel
         </h3>
-        <span className="mb-[1.125rem] inline-block text-[0.9375rem] font-semibold text-grey">
+        <span className="split mb-[1.125rem] inline-block text-[0.9375rem] font-semibold text-grey">
           Frontend Developer
         </span>
 

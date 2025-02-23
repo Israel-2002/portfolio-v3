@@ -15,7 +15,7 @@ const Testimonials = () => {
             <SubtitleText number="03" text="Testimonials" />
           </div>
 
-          <h2 className="">
+          <h2 className="split">
             Don&apos;t take my <br /> word for{" "}
             <span className="relative">
               it{" "}
@@ -26,7 +26,7 @@ const Testimonials = () => {
               />
             </span>
           </h2>
-          <p className="mb-10 mt-5 text-[0.9375rem] font-semibold text-grey xl:mb-[6.25rem] xl:mt-6 xl:text-[1.0625rem]">
+          <p className="split mb-10 mt-5 text-[0.9375rem] font-semibold text-grey xl:mb-[6.25rem] xl:mt-6 xl:text-[1.0625rem]">
             <span className="text-primary">*</span>Take theirs
           </p>
         </div>

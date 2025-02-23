@@ -16,12 +16,12 @@ const Hero = () => {
     >
       <Container>
         <div className="relative">
-          <h1 className="max-w-[680px] font-medium text-white md:max-w-none">
+          <h1 className="split split-padding max-w-[680px] font-medium text-white md:max-w-none">
             Delivering Thoughtfully <br className="hidden md:block" /> Built Web{" "}
             <span className="text-primary">Experiences</span>.
           </h1>
 
-          <p className="mb-10 mt-5 max-w-[470px] text-lg min-[800px]:max-w-[700px] xl:text-xl">
+          <p className="split mb-10 mt-5 max-w-[470px] text-lg min-[800px]:max-w-[700px] xl:text-xl">
             I build fast, responsive websites that prioritize seamless user
             experiences and modern design, ensuring every detail aligns with
             your goals.

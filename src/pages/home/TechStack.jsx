@@ -7,12 +7,14 @@ const TechStack = () => {
     <section className="bg-[#f8f8f8] py-[3.125rem] lg:py-[10rem]">
       <Container>
         <div className="mx-auto flex max-w-[1280px] flex-col items-start justify-between gap-[1.875rem] min-[1180px]:flex-row">
-          <div className="min-[1180px]:sticky lg:top-20 mx-auto w-fit text-center min-[1180px]:mx-0 min-[1180px]:text-left">
+          <div className="mx-auto w-fit text-center lg:top-20 min-[1180px]:sticky min-[1180px]:mx-0 min-[1180px]:text-left">
             <div className="mx-auto w-fit min-[1180px]:mx-0">
               <SubtitleText noShadow number="02" text="Tech Stack" />
             </div>
 
-            <h2 className="min-[1180px]:max-w-[300px]">Technologies I use</h2>
+            <h2 className="split split-padding">
+              Technologies I use
+            </h2>
           </div>
 
           <ul className="mx-auto grid w-fit gap-6 min-[1180px]:mx-0 min-[1180px]:flex-shrink-0">
