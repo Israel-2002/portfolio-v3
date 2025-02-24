@@ -6,6 +6,11 @@ html {
   scroll-behavior: smooth;
 }
 
+*,
+button {
+  /* cursor: none; */
+}
+
 body {
   font-family: "Manrope", sans-serif;
 }

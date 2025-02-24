@@ -8,6 +8,7 @@ import "lenis/dist/lenis.css";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 import { text } from "@/pages/animation/text";
+// import CustomCursor from "@/components/CustomCursor";
 
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 
@@ -38,6 +39,7 @@ const Layout = () => {
 
   return (
     <ReactLenis root options={{ autoRaf: false }} ref={lenisRef}>
+      {/* <CustomCursor /> */}
       <Navbar />
       <Outlet />
       <Footer />
