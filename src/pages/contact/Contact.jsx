@@ -12,7 +12,7 @@ const Contact = () => {
       <Container>
         <div className="flex flex-col justify-between gap-12 lg:flex-row lg:gap-16">
           <div className="flex-shrink-0 text-center lg:text-left">
-            <h2 className="split page-title mb-6">
+            <h2 className="split split-padding page-title mb-6">
               Let&apos;s work <br /> together
             </h2>
             <p className="split mx-auto mb-4 max-w-[370px] text-sm font-semibold text-[#2F2F2F80] md:text-[0.9375rem]">
