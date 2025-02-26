@@ -4,6 +4,17 @@ import SplitType from "split-type";
 
 gsap.registerPlugin(ScrollTrigger);
 
+function debounce(func, wait) {
+  let timeout;
+  return function (...args) {
+    const context = this;
+    clearTimeout(timeout);
+    timeout = setTimeout(() => {
+      func.apply(context, args);
+    }, wait);
+  };
+}
+
 export const text = (element) => {
   let splitText;
   let scrollTriggers = [];
@@ -41,18 +52,24 @@ export const text = (element) => {
   };
 
   const killScrollTriggers = () => {
+    console.log(scrollTriggers);
+
     scrollTriggers.forEach((scrollTrigger) => {
       scrollTrigger.kill();
     });
   };
 
-  const handleResize = () => {
+  const debouncedFunction = debounce(() => {
     if (splitText) splitText.revert();
     killScrollTriggers();
     init();
-  };
+  }, 300);
+
+  window.addEventListener("resize", debouncedFunction);
 
   init();
 
-  window.addEventListener("resize", handleResize);
+  return () => {
+    window.removeEventListener("resize");
+  };
 };
