@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 html {
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
 }
 
 *,
@@ -55,8 +55,8 @@ h3 {
   bottom: 0;
   width: 100%;
   transform: scaleX(0);
-  height: 1px;
-  background-color: white;
+  height: 1.5px;
+  background-color: currentColor;
   transition: transform 300ms linear;
   transform-origin: right;
 }
@@ -75,7 +75,7 @@ h3 {
 }
 
 .testimonial-marquee {
-  animation: marquee 550s linear infinite;
+  animation: marquee 750s linear infinite;
 }
 
 .paralax-image-container {
@@ -138,5 +138,18 @@ h3 {
   100% {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
+  }
+}
+
+/* media queries */
+@media (max-width: 768px) {
+  .testimonial-marquee {
+    animation: marquee 1150s linear infinite;
+  }
+}
+
+@media (max-width: 650px) {
+  .testimonial-marquee {
+    animation: marquee 1350s linear infinite;
   }
 }
