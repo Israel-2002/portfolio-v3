@@ -1,9 +1,10 @@
 import { cn } from "@/lib/cn";
 import PropTypes from "prop-types";
 
-const Button = ({ label, onClick, className, icon }) => {
+const Button = ({ type = "button", label, onClick, className, icon }) => {
   return (
     <button
+      type={type}
       onClick={onClick}
       className={cn(
         "rounded-full bg-primary py-5 font-medium text-white md:text-lg",
@@ -26,6 +27,7 @@ const Button = ({ label, onClick, className, icon }) => {
 };
 
 Button.propTypes = {
+  type: PropTypes.string,
   label: PropTypes.string,
   onClick: PropTypes.func,
   className: PropTypes.string,
