@@ -7,7 +7,7 @@ import { Outlet, useLocation } from "react-router-dom";
 import "lenis/dist/lenis.css";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
-import { text } from "@/pages/animation/text";
+// import { text } from "@/pages/animation/text";
 // import CustomCursor from "@/components/CustomCursor";
 
 gsap.registerPlugin(ScrollTrigger, useGSAP);
@@ -30,12 +30,14 @@ const Layout = () => {
     return () => gsap.ticker.remove(update);
   }, []);
 
-  useGSAP(
-    () => {
-      text(".split");
-    },
-    { dependencies: [pathname] },
-  );
+  // useGSAP(
+  //   () => {
+  //     const cleanup = text(".split");
+
+  //     return () => cleanup && cleanup();
+  //   },
+  //   { dependencies: [pathname] },
+  // );
 
   return (
     <ReactLenis root options={{ autoRaf: false }} ref={lenisRef}>
