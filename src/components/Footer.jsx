@@ -93,16 +93,16 @@ const Footer = () => {
               </span>
               <a
                 href="mailto:israelrankin@gmail.com"
-                className="split link mb-[1.625rem] inline-block break-all text-[1.875rem] font-semibold leading-snug md:break-normal lg:mb-[2.6875rem] lg:text-4xl min-[1180px]:mb-9 min-[1180px]:text-[2.5rem]"
+                className="split split-padding link mb-[1.625rem] inline-block break-all text-[1.875rem] font-semibold leading-snug md:break-normal lg:mb-[2.6875rem] lg:text-4xl min-[1180px]:mb-9 min-[1180px]:text-[2.5rem]"
               >
-                israelrankin<span className="text-primary">@</span>gmail.com
+                Send me a mail 📧
               </a>
 
               <p className="split mx-auto mb-[2.75rem] max-w-[590px] text-lg font-semibold leading-snug text-grey lg:mb-[3.125rem] lg:text-xl min-[1180px]:mb-[4.375rem]">
                 Hit me up if you&apos;re looking for a{" "}
                 <span className="split text-white">
                   solid frontend developer
-                </span>
+                </span>{" "}
                 <span className="split">
                   who can bring your vision to life.
                 </span>
@@ -123,8 +123,8 @@ const Footer = () => {
         <div className="flex flex-col justify-between gap-5 py-10 text-grey md:flex-row md:text-lg">
           <span className="split">© 2025</span>
 
-          <div className="flex items-center gap-4">
-            <p className="split">ACCRA, GHANA</p>
+          <div className="flex items-center gap-2">
+            <p className="split">ACCRA, GHANA :</p>
 
             <p className="inline-block w-[72px] text-white/80">{time}</p>
           </div>
