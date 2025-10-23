@@ -19,7 +19,7 @@ const Navbar = () => {
   const hamburgerBarsRef = useRef([]);
 
   const logoUrl =
-    import.meta.env.NODE_ENV === "development"
+    import.meta.env.VITE_ENV === "development"
       ? "http://localhost:5173"
       : "https://izzy-portfoliooo.netlify.app/";
 
