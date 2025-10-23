@@ -1,25 +1,25 @@
-import img from "@/assets/images/projects/pottery-artist-portfolio.jpg";
-import img2 from "@/assets/images/projects/evergreen-solutions.jpg";
-import img3 from "@/assets/images/projects/echo-stream.jpg";
+import img from "@/assets/images/projects/vendorlope.png";
+import img2 from "@/assets/images/projects/vendorlope-landing-page.png";
+import img3 from "@/assets/images/projects/conciergegh.png";
 import img4 from "@/assets/images/projects/pulse-tech.jpg";
 
 export const PROJECTS = [
   {
     img,
-    category: "Pottery Artist Portfolio",
-    title: "SilverLynx Technologies",
+    category: "Inventory Management System",
+    title: "Vendorlope Dashboard",
     description: "Result: 175% increase in online sales.",
   },
   {
     img: img2,
-    category: "Artist Portfolio",
-    title: "Evergreen Solutions",
+    category: "Marketing Website",
+    title: "Vendorlope Landing Page",
     description: 'Featured in Best "Portfolio Websites of 2023" by DesignMag',
   },
   {
     img: img3,
-    category: "Landing Page",
-    title: "EchoStream Entertainment",
+    category: "Food Discovery Platform",
+    title: "Concierge Ghana",
     description: "Interface is streamlined for ease of navigation, with clean layouts"
   },
   {
