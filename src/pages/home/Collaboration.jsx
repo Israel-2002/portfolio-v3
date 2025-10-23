@@ -16,7 +16,7 @@ const Collaboration = () => {
               className="link text-primary after:bg-primary"
               href="mailto:israelrankin@gmail.com"
             >
-              email 📧
+              email ✉️
             </a>
             .
           </h3>
