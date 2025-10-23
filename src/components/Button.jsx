@@ -42,7 +42,7 @@ Button.propTypes = {
   label: PropTypes.string,
   onClick: PropTypes.func,
   className: PropTypes.string,
-  icon: PropTypes.string | PropTypes.node,
+  icon: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
   isLoading: PropTypes.bool,
   disabled: PropTypes.bool,
 };
