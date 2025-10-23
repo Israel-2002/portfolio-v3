@@ -16,7 +16,10 @@ const Footer = () => {
   const { pathname } = useLocation();
 
   const backToTopHandler = () => {
-    window.scrollTo(0, 0);
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
   };
 
   useEffect(() => {
@@ -112,7 +115,7 @@ const Footer = () => {
                 icon={arrowRight}
                 onClick={() => navigate("/contact")}
                 label="Contact me"
-                className="w-[183px] text-left md:w-[190px]"
+                className="w-[183px] text-left md:w-[190px] mx-auto min-[1180px]:mx-0"
               />
             </div>
           </div>
