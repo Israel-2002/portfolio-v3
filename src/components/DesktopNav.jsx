@@ -44,6 +44,7 @@ const DesktopNav = ({ isOpen, pathname, setIsOpen, linksRef }) => {
             className={cn(
               "link relative inline-block w-[100px] text-left",
               pathname !== "/" ? "after:bg-matte-black" : "",
+              pathname === "/" ? "text-white" : "text-matte-black",
             )}
             onClick={() => setIsOpen(false)}
           >
