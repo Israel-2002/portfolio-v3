@@ -1,6 +1,5 @@
 import { NAVLINKS } from "@/constants/NAVBAR";
 import { NavLink } from "react-router-dom";
-import ArrowDiagonal from "@/assets/svg/arrow-45deg.svg?react";
 import PropTypes from "prop-types";
 import { cn } from "@/lib/cn";
 
@@ -42,14 +41,28 @@ const DesktopNav = ({ isOpen, pathname, setIsOpen, linksRef }) => {
             href="https://israeldornor.vercel.app/"
             target="_blank"
             className={cn(
-              "link relative inline-block w-[100px] text-left",
+              "link relative flex items-center gap-0.5 text-left",
               pathname !== "/" ? "after:bg-matte-black" : "",
               pathname === "/" ? "text-white" : "text-matte-black",
             )}
             onClick={() => setIsOpen(false)}
           >
             Version 2
-            <ArrowDiagonal className="absolute right-0 top-1/2 -translate-y-1/2" />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1.8"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="lucide lucide-arrow-up-right-icon lucide-arrow-up-right"
+            >
+              <path d="M7 7h10v10" />
+              <path d="M7 17 17 7" />
+            </svg>
           </a>
         </li>
       </ul>
