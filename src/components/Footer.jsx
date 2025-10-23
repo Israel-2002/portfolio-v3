@@ -95,7 +95,7 @@ const Footer = () => {
                 href="mailto:israelrankin@gmail.com"
                 className="split split-padding link mb-[1.625rem] inline-block break-all text-[1.875rem] font-semibold leading-snug md:break-normal lg:mb-[2.6875rem] lg:text-4xl min-[1180px]:mb-9 min-[1180px]:text-[2.5rem]"
               >
-                Send me a mail 📧
+                Send me a mail ✉️
               </a>
 
               <p className="split mx-auto mb-[2.75rem] max-w-[590px] text-lg font-semibold leading-snug text-grey lg:mb-[3.125rem] lg:text-xl min-[1180px]:mb-[4.375rem]">
