@@ -2,12 +2,15 @@ import Button from "@/components/Button";
 import { cn } from "@/lib/cn";
 import { useFormik } from "formik";
 import * as Yup from "yup";
+import emailjs from "@emailjs/browser";
+import { useEffect, useState } from "react";
+import Response from "@/pages/contact/Response";
 
 const schema = Yup.object({
-  fullname: Yup.string()
-    .required("Full name is required")
-    .min(2, "Full name must be at least 2 characters")
-    .max(50, "Full name must be 50 characters or less"),
+  name: Yup.string()
+    .required("Name is required")
+    .min(2, "Name must be at least 2 characters")
+    .max(50, "Name must be 50 characters or less"),
 
   email: Yup.string()
     .required("Email is required")
@@ -20,41 +23,84 @@ const schema = Yup.object({
 });
 
 const Form = () => {
+  const [isLoading, setIsLoading] = useState(false);
+  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [response, setResponse] = useState({ message: "", status: undefined });
+
   const formik = useFormik({
     initialValues: {
-      fullname: "",
+      name: "",
       email: "",
       message: "",
     },
 
     validationSchema: schema,
 
-    onSubmit: (values) => {
-      console.log(values);
+    onSubmit: (values, { resetForm }) => {
+      setIsLoading(true);
+
+      emailjs
+        .send(
+          import.meta.env.VITE_EMAILJS_SERVICE_ID,
+          import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+          values,
+          {
+            publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
+          },
+        )
+        .then(() => {
+          setResponse({
+            message:
+              "Thanks for reaching out! Your message has been received, and I'll respond soon.",
+            status: 200,
+          });
+
+          resetForm();
+        })
+        .catch((err) => {
+          console.log(err);
+
+          setResponse({
+            message: "Something wen't wrong, please try again later.",
+            status: 400,
+          });
+        })
+        .finally(() => {
+          setIsLoading(false);
+          setIsSubmitted(true);
+        });
     },
   });
+
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      setIsSubmitted(false);
+    }, 5000);
+
+    return () => {
+      clearTimeout(timeout);
+    };
+  }, [isSubmitted]);
 
   return (
     <div className="mx-auto w-full max-w-[620px] rounded-xl bg-white p-5 shadow-xl shadow-primary/10 md:p-6 lg:max-w-none lg:p-8">
       <form onSubmit={formik.handleSubmit}>
-        <div className="mb-6 grid gap-4">
+        <div className="grid gap-4">
           <div>
             <input
-              {...formik.getFieldProps("fullname")}
+              {...formik.getFieldProps("name")}
               type="text"
-              placeholder="Full Name"
+              placeholder="Name"
               className={cn(
                 "w-full rounded-md border border-gray-200 bg-[#F8F8F8] px-4 py-3 text-matte-black focus:border-transparent focus:outline-primary lg:py-4",
-                formik.errors.fullname
+                formik.errors.name
                   ? "border-red-500 focus:outline-red-500"
                   : "",
               )}
             />
 
-            {formik.touched && formik.errors.fullname && (
-              <p className="mt-1 text-sm text-red-500">
-                {formik.errors.fullname}
-              </p>
+            {formik.touched && formik.errors.name && (
+              <p className="mt-1 text-sm text-red-500">{formik.errors.name}</p>
             )}
           </div>
 
@@ -97,10 +143,17 @@ const Form = () => {
           </div>
         </div>
 
+        {isSubmitted && !isLoading && (
+          <Response message={response.message} status={response.status} />
+        )}
+
         <Button
           type="submit"
+          icon={<div className="loader"></div>}
           label="Send Message"
-          className="w-full rounded-md hover:bg-primary/95"
+          className="mt-6 w-full justify-center rounded-md hover:bg-primary/95"
+          disabled={isLoading}
+          isLoading={isLoading}
         />
       </form>
     </div>
