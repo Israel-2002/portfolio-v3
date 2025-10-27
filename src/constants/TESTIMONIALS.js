@@ -1,6 +1,6 @@
 import avatar from '@/assets/images/home/avatars/constant.jpeg'
 import avatar2 from '@/assets/images/home/avatars/kwame-sarpong.jpg'
-import avatar3 from '@/assets/images/home/avatars/avatar-3.png'
+import avatar3 from '@/assets/images/home/avatars/basit.jpeg'
 import avatar4 from '@/assets/images/home/avatars/avatar-4.png'
 import avatar5 from '@/assets/images/home/avatars/avatar-5.png'
 import avatar6 from '@/assets/images/home/avatars/avatar-6.png'
