@@ -23,10 +23,10 @@ export const TESTIMONIALS = [
     testimonial: "Extremely talented and reliable frontend engineer. Demonstrated exceptional skills and remarkable discipline throughout all projects he did for Logiciele Labs, and his attention to details is top notch."
   },
   {
-    name: "Adam Mccall",
+    name: "Basit Mohammed",
     image: avatar3,
-    position: "Creative Director",
-    testimonial: "You're a reliable and talented frontend developer. From the very start, you showed a deep understanding of our needs and turned our vision into reality with remarkable speed and precision. Your code was as elegant as your design implementation."
+    position: "Backend Developer",
+    testimonial: "Israel is an outstanding engineer whose clarity of thought, focus, and precision set him apart. He approaches every task with purpose and attention to detail, consistently delivering excellent results. Working with him is both inspiring and rewarding, and his professionalism and problem-solving skills make him a true asset to any team."
   },
   {
     name: "Tisha Norton",
