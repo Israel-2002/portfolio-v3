@@ -8,25 +8,32 @@ export const PROJECTS = [
     img,
     category: "Inventory Management System",
     title: "Vendorlope Dashboard",
-    description: "Result: 175% increase in online sales.",
+    description:
+      "A complete platform that lets vendors manage inventory, track sales, and view performance insights in real time.",
+    url: "https://app.vendorlope.com",
   },
   {
     img: img2,
     category: "Marketing Website",
     title: "Vendorlope Landing Page",
-    description: 'Featured in Best "Portfolio Websites of 2023" by DesignMag',
+    description:
+      "A clean, focused marketing site designed to highlight Vendorlope's features and drive new sign-ups.",
+    url: "https://vendorlope.com",
   },
   {
     img: img3,
     category: "Food Discovery Platform",
     title: "Concierge Ghana",
-    description: "Interface is streamlined for ease of navigation, with clean layouts"
+    description:
+      "A simple, intuitive platform that helps users find restaurants and local food spots that fit their taste and budget.",
+    url: "https://conciergegh.com",
   },
   {
     img: img4,
-    category: "Ecommerce Store",
-    title: "PulseTech Innovations",
+    category: "Blog Website",
+    title: "Inked",
     description:
-      "Result: 200% increase in online sales within the first quarter",
+      "A content hub for writers and creatives to share stories, ideas, and perspectives.",
+    comingSoon: true,
   },
 ];
