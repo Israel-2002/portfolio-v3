@@ -75,7 +75,7 @@ h3 {
 }
 
 .testimonial-marquee {
-  animation: marquee 750s linear infinite;
+  animation: marquee 1000s linear infinite;
 }
 
 .paralax-image-container {
@@ -163,12 +163,12 @@ h3 {
 /* media queries */
 @media (max-width: 768px) {
   .testimonial-marquee {
-    animation: marquee 1150s linear infinite;
+    animation: marquee 1500s linear infinite;
   }
 }
 
 @media (max-width: 650px) {
   .testimonial-marquee {
-    animation: marquee 1550s linear infinite;
+    animation: marquee 2000s linear infinite;
   }
 }
